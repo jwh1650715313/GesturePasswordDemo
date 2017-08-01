@@ -6,7 +6,7 @@ GesturePasswordView是一个非常方便使用的Gesture Lock控件只需要简�
 
 ![九宫格解锁.gif](http://upload-images.jianshu.io/upload_images/1818626-16859665f17c8616.gif?imageMogr2/auto-orient/strip)
 
-####分析实现原理
+### 分析实现原理
 >1.首先要自定义一个view(也就是GesturePasswordView)，因为要监听手指在View上的移动,最后必须重写：
 touchesBegan
 touchesMoved
