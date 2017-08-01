@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="showPsdViewController">
+            <connections>
+                <outlet property="PsdWordView" destination="qcy-Lr-0QF" id="hLF-cX-VPd"/>
+                <outlet property="PsdWordViewLeft" destination="fsy-B2-wmI" id="2OC-x0-cEw"/>
+                <outlet property="PsdWordViewTop" destination="279-mW-GUE" id="h3d-Gi-XB5"/>
+                <outlet property="TopToast" destination="By8-7J-Esp" id="ylK-MG-Yd8"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IbS-9L-dID">
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qcy-Lr-0QF">
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="300" id="Aah-8y-BAK"/>
+                                <constraint firstAttribute="height" constant="300" id="B2g-ay-8RR"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="设置手势密码" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="By8-7J-Esp">
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="375" id="7UX-hN-Xxi"/>
+                                <constraint firstAttribute="height" constant="21" id="9vW-4o-CvC"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gBh-fo-crP">
+                            <state key="normal" title="重新设置"/>
+                            <connections>
+                                <action selector="SetPsdWord:" destination="-1" eventType="touchUpInside" id="SVB-1Q-97S"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.86666666670000003" green="0.86666666670000003" blue="0.86666666670000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="qcy-Lr-0QF" firstAttribute="top" secondItem="IbS-9L-dID" secondAttribute="top" constant="183" id="279-mW-GUE"/>
+                        <constraint firstAttribute="height" constant="667" id="8Fr-P4-nbi"/>
+                        <constraint firstItem="gBh-fo-crP" firstAttribute="leading" secondItem="IbS-9L-dID" secondAttribute="leading" constant="156" id="D27-Ky-7j8"/>
+                        <constraint firstAttribute="trailing" secondItem="qcy-Lr-0QF" secondAttribute="trailing" constant="38" id="K4o-zS-edJ"/>
+                        <constraint firstItem="By8-7J-Esp" firstAttribute="top" secondItem="IbS-9L-dID" secondAttribute="top" constant="90" id="KKN-95-pp6"/>
+                        <constraint firstAttribute="trailing" secondItem="By8-7J-Esp" secondAttribute="trailing" id="O2R-pM-eKJ"/>
+                        <constraint firstAttribute="width" constant="375" id="Unt-ZT-k1P"/>
+                        <constraint firstItem="By8-7J-Esp" firstAttribute="leading" secondItem="IbS-9L-dID" secondAttribute="leading" id="V5N-Dj-hEB"/>
+                        <constraint firstAttribute="bottom" secondItem="gBh-fo-crP" secondAttribute="bottom" constant="75" id="Wte-0N-GWR"/>
+                        <constraint firstItem="qcy-Lr-0QF" firstAttribute="leading" secondItem="IbS-9L-dID" secondAttribute="leading" constant="37" id="fsy-B2-wmI"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="IbS-9L-dID" secondAttribute="bottom" id="gDH-VR-Ces"/>
+                <constraint firstAttribute="trailing" secondItem="IbS-9L-dID" secondAttribute="trailing" id="jnt-9S-B0m"/>
+                <constraint firstItem="IbS-9L-dID" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="nbF-nS-sMx"/>
+                <constraint firstItem="IbS-9L-dID" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="q07-iM-HvC"/>
+            </constraints>
+            <point key="canvasLocation" x="24.5" y="51.5"/>
+        </view>
+    </objects>
+</document>
